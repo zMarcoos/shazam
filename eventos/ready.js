@@ -12,4 +12,4 @@ client.on('ready', async () => {
     };
     setInterval(() => setStatus(), 5000);
 });
-client.login("NzQxNDQxMjkwNzE3MzY0MjM0.Xy3nAw.gJSD2VmKpXC8Uf3SUP4RlsTd_Iw");
+client.login(process.env.TOKEN);
