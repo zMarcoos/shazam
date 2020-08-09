@@ -7,6 +7,10 @@ module.exports.run = async (client, message, args) => {
     if(!(mensagem)) return message.reply("digite algo para anunciar.").then(m => {
         return m.delete({timeout: 5000});
     });
+    const embed = new Discord.RichEmbed()
+    .setColor("36393f")
+    .setDescription(mensagem)
+    .setFooter(`Anunciado por ${message.author.tag}!`, message.author.avatarURL)
     message.channel.send(mensagem);
 }
 module.exports.help = {
