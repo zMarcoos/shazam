@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
     const embed = new Discord.MessageEmbed()
     .setColor("36393f")
     .setDescription(mensagem)
-    .setFooter(`Anunciado por ${message.author.tag}!`, message.author.avatarURL())
+    .setFooter(`Anunciado por ${message.author.tag}`, message.author.avatarURL())
     message.channel.send(embed);
 }
 module.exports.help = {
