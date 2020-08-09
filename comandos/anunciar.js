@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("36393f")
     .setDescription(mensagem)
     .setFooter(`Anunciado por ${message.author.tag}!`, message.author.avatarURL())
-    message.channel.send(mensagem);
+    message.channel.send(embed);
 }
 module.exports.help = {
     name: 'anunciar',
